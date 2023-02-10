@@ -1,0 +1,60 @@
+
+.header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #262626;
+}
+.header__image {
+    height: 140vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    z-index: 3;
+}
+.overlay__text {
+    margin-left: 20vw;
+    margin-top: 15vh;
+    font-size: 2rem;
+    background: none;
+}
+
+.overlay__text > button {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 479px) {
+    .overlay__text {
+        margin-left: 20vw;
+        margin-top: 15vh;
+        font-size: 1rem;
+        background: none;
+    }
+    
+    .overlay__text > button {
+        margin-top: 1rem;
+        padding: 1rem;
+        border: 2px solid white;
+        background: none;
+        color: white;
+        border-radius: 0.5rem;
+        font-weight: 700;
+        font-size: 0.75rem;
+    }
+}
