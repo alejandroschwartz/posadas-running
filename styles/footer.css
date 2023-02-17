@@ -9,6 +9,12 @@
 }
 
 
+.map {
+    height: 600px;
+    width: 80%;
+    padding: auto;
+}
+
 .contact__logos {
     margin: 40px 0px;
     display: flex;
@@ -35,9 +41,9 @@
     font-size:150px;
 }
 .footer {
-    height: 70vh;
+    /* height: 70vh; */
     overflow: hidden;
-    padding-top: 24px;
+    padding-top: 80px;
     background: var(--color-french-gray);
     color: var(--color-white);
     font-size: 24px;
@@ -48,6 +54,9 @@
     align-items: center;
 }
 .footer__text {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
     background: none;
     text-align: center;
 }
@@ -69,6 +78,11 @@
 
 
 @media only screen and (max-width: 639px) {
+    .map {
+        height: 500px;
+        width: 94%;
+        padding: auto;
+    }
     .contact__logo--container {
         background: none;
         height: 140px;
